@@ -3,8 +3,6 @@
   "remoteUser": "vscode",
   "runArgs": [],
   "image": "michaelee/cs340hs:spring25",
-  "workspaceMount": "source=../MP,target=/workspace,type=bind",
-  "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {
       "extensions": [
