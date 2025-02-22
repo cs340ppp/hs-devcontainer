@@ -1,0 +1,41 @@
+{
+  "name": "DevContainer for Haskell",
+  "remoteUser": "vscode",
+  "runArgs": [],
+  "image": "michaelee/cs340hs:spring25",
+  "workspaceMount": "source=../MP,target=/workspace,type=bind",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "haskell.haskell",
+        "phoityne.phoityne-vscode",
+        "eriksik2.vscode-ghci",
+        "jcanero.hoogle-vscode"
+      ],
+      "settings": {
+        "files.exclude": {
+          "**/*.olean": true,
+          "**/.DS_Store": true,
+          "**/.git": true,
+          "**/.hg": true,
+          "**/.svn": true,
+          "**/CVS": true
+        },
+        "haskell.checkProject": true,
+        "haskell.formattingProvider": "ormolu",
+        "haskell.indentationRules.enabled": true,
+        "haskell.liquidOn": false,
+        "haskell.checkParents": "CheckOnSave",
+        "haskell.manageHLS": "GHCup",
+        "haskell.maxCompletions": 40,
+        "haskell.openDocumentationInHackage": false,
+        "haskell.openSourceInHackage": false,
+        "haskell.trace.client": "error",
+        "haskell.trace.server": "off",
+        "haskell.upgradeGHCup": true,
+        "hoogle-vscode.useCabalDependencies": true
+      }
+    }
+  }
+}
