@@ -2,7 +2,7 @@
   "name": "DevContainer for Haskell",
   "remoteUser": "vscode",
   "runArgs": [],
-  "image": "michaelee/cs340hs:spring25",
+  "image": "michaelee/cs340hs:latest",
   "customizations": {
     "vscode": {
       "extensions": [
